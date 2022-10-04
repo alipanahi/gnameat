@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('home');
+    return view('dashboard');
 })->middleware(['auth','verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/privacy_policy', function () {
+    return view('privacy');
+})->name('privacy');

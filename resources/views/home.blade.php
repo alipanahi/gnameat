@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="{{URL::asset('/images/favicon.ico')}}">
     <title>
-      Tailwind Starter Template - Landing Page Template: Tailwind Toolbox
+      Gnameat-Sistema di Fidelizzazione
     </title>
     <meta name="description" content="Simple landind page" />
     <meta name="keywords" content="" />
@@ -40,31 +41,26 @@
           </button>
         </div>
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center text-white">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center" style="color:#923116">
           
           @if (Route::has('login'))
                   @auth
                   <li class="mr-3">
-                    <a class="text-white inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="{{ url('/dashboard') }}">Dashboard</a>
+                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" style="color:inherit;" href="{{ url('/dashboard') }}">Dashboard</a>
                   </li>
                   @else
                     <li class="mr-3">
-                      <a class=" text-white inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="{{ route('login') }}">Accesso</a>
+                      <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" style="color:inherit;" href="{{ route('login') }}">Accesso</a>
                     </li>
                     @if (Route::has('register'))
                       <li class="mr-3">
-                        <a class=" text-white inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="{{ route('register') }}">Registrati</a>
+                        <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" style="color:inherit;" href="{{ route('register') }}">Registrati</a>
                       </li>
                     @endif
                   @endauth
           @endif
           </ul>
-          <button
-            id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          >
-            Action
-          </button>
+          
         </div>
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -76,10 +72,10 @@
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <p class="uppercase tracking-loose w-full">Sistema di Fidelizzazione</p>
           <h1 class="my-4 text-5xl font-bold leading-tight" style="color:#923116">
-          benvenuti nel sistema fedeltà Gnameat!
+          Benvenuti nel sistema fedeltà Gnameat!
           </h1>
           <p class="leading-normal text-2xl mb-8">
-          mangia da Gnameat, guadagna punti e ricevi ricompense!
+          mangia in Gnameat, guadagna punti e ricevi ricompense!
           </p>
           <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Subscribe
@@ -91,6 +87,7 @@
         </div>
       </div>
     </div>
+    <!-- the curv -->
     <div class="relative -mt-12 lg:-mt-24">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -112,8 +109,8 @@
     </div>
     <section class="bg-white border-b py-8" >
       <div class="container max-w-5xl mx-auto m-8">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        How?
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center" style="color:#437170">
+        Come?
         </h2>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -125,8 +122,6 @@
             </h3>
             <p class="text-gray-600 mb-8" style="color:#d18d25;">
             otterrai 10 punti per ogni 1 euro di acquisto su Gnameat
-              <br />
-              <br />
 
             </p>
           </div>
@@ -141,12 +136,14 @@
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
               <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3" style="color:#923116">
-              come ottenere ricompense
+              come ottenere ricompense?
               </h3>
               <p class="text-gray-600 mb-8" style="color:#d18d25;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                <br />
-                <br />
+                <ul>
+                  <li>Puoi usare i tuoi punti quando hai almeno 100 punti</li>
+                  <li>Ogni 10 punti = €1 (10%)</li>
+                  <li>Il bonus può essere speso e raccolto in qualsiasi ristorante</li>
+                </ul>
                 
               </p>
             </div>
@@ -178,34 +175,27 @@
       </g>
     </svg>
     <section class="container mx-auto text-center py-6 mb-12">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-        Call to Action
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center" style="color:#923116">
+        Registrati ora
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
       <h3 class="my-4 text-3xl leading-tight">
-        Main Hero Message to sell yourself!
+      ci vuole meno di un minuto!
       </h3>
-      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        Action!
-      </button>
+      <a class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" href="{{ route('register') }}">Registrati</a>
+      
     </section>
     <!--Footer-->
     <footer class="bg-white">
       <div class="container mx-auto px-8">
         <div class="w-full flex flex-col md:flex-row py-6">
           <div class="flex-1 mb-6 text-black">
-            <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#" style="display:flex;">
               <!--Icon from: http://www.potlabicons.com/ -->
-              <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-                <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
-                <path
-                  class="plane-take-off"
-                  d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
-                />
-              </svg>
-              LANDING
+              <img src="{{URL::asset('/images/logo.png')}}" style="border-radius:50%;align-self: center;" width="30px" hight="30px" alt="logo">
+              <span style="color:#d18d25">Gna</span><span style="color:#923116">meat</span>
             </a>
           </div>
           <div class="flex-1">
