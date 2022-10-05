@@ -2,16 +2,20 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+            <img src="{{URL::asset('/images/register-logo.png')}}" alt="logo" style="margin:0 auto;" width="50%">
             </a>
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+            {{ __('Hai dimenticato la password? Nessun problema. Facci sapere il tuo indirizzo e-mail e ti invieremo via e-mail un link per reimpostare la password che ti consentirà di sceglierne uno nuovo.') }}
         </div>
 
         <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
+        @if (session('status'))
+                <div class="mb-4 font-medium text-sm text-green-600">
+                Abbiamo inviato via email il link per la reimpostazione della password!
+                </div>
+            @endif
 
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
@@ -28,7 +32,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <x-button>
-                    {{ __('Email Password Reset Link') }}
+                    {{ __('invia il link per la reimpostazione della password') }}
                 </x-button>
             </div>
         </form>
