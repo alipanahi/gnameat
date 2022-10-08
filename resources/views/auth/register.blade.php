@@ -15,7 +15,9 @@
         <div class="flex items-center justify-center min-h-screen" style="background-image:linear-gradient(90deg,#d18d25 0%,#923116 100%)">
             <div class="px-8 py-6 mx-4 mt-4 text-left shadow-lg md:w-1/2 lg:w-1/2sm:w-1/2" style="background-color:#e9e7d3;">
                 <div class="flex justify-center">
-                    <img src="{{URL::asset('/images/register-logo.png')}}" width="50%">
+                    <a href="{{route('/')}}">
+                        <img src="{{URL::asset('/images/register-logo.png')}}" width="50%" style="margin:0 auto;">
+                    </a>
                 </div>
                 <x-auth-validation-errors class="mb-4" :errors="$errors" />
                 <form method="POST" action="{{ route('register') }}">
