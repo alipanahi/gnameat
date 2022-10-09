@@ -8,8 +8,10 @@
         <title>
             Registerati
         </title>
-        
+        <link href="{{URL::asset('/css/app.css')}}" rel="stylesheet">
+        <!--
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        -->
     </head>
     <body>
         <div class="flex items-center justify-center min-h-screen" style="background-image:linear-gradient(90deg,#d18d25 0%,#923116 100%)">
@@ -55,7 +57,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                                 </svg>
                             </a>
-                            <input type="text" placeholder="www.instagram.com/your_name" id="instagram" name="instagram" value="{{old('instagram')}}" required
+                            <input type="text" placeholder="www.instagram.com/your_profile" id="instagram" name="instagram" value="{{old('instagram')}}" required
                                         class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
                         </div>
                         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">

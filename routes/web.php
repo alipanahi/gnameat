@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +15,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    if (Auth::check()) {
+        if(Auth::user()['type']=='normal'){
+            $data = User::find(Auth::id())->points;
+            return view('dashboard',['data'=>$data]);
+        }else{
+            return view('admin-dashboard');
+        }
+    }else{
+        return view('home');
+    }
 })->name('/');
 
 Route::get('/dashboard', function () {
     if(Auth::user()['type']=='normal'){
-        return view('dashboard');
+        $data = User::find(Auth::id())->points;
+        return view('dashboard',['data'=>$data]);
     }else{
         return view('admin-dashboard');
     }

@@ -12,10 +12,10 @@
 
   <!-- Font Awesome if you need it
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  -->
+  
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
-  <!--Replace with your tailwind.css once created-->
-
+  Replace with your tailwind.css once created-->
+	<link href="{{URL::asset('/css/app.css')}}" rel="stylesheet">
 </head>
 
 <body class="font-sans antialiased text-gray-100 leading-normal tracking-wider bg-cover" style="background-image:url('{{URL::asset('/images/privacy-background.jpg')}}');">
@@ -32,7 +32,7 @@
 			<!-- Image for mobile view-->
 			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('{{URL::asset('/images/logo.png')}}')"></div>
 			
-			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Privacy Policy</h1>
+			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Privacy Policy-Gnameat</h1>
 			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 			<div style="overflow:auto;height:370px;">
 				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg> The Personal Data</p>
