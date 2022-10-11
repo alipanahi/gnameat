@@ -85,8 +85,13 @@
                             <input id="terms" name="terms" type="checkbox" required value="yes" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                             <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Accetto i termini e le condizioni *</label>
                         </div>
-                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <a class="underline text-sm" style="color:blue;" onMouseOver="this.style.color='#923116'" onMouseOut="this.style.color='blue'" href="{{URL::route('privacy')}}" target="_blank">Privacy Policy</a>
+                        <div class="flex flex-wrap w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <a class="underline text-sm" style="color:blue;" onMouseOver="this.style.color='#923116'" onMouseOut="this.style.color='blue'" href="{{URL::route('privacy')}}" target="_blank">Privacy Policy</a>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <a class="underline text-sm" style="color:blue;" onMouseOver="this.style.color='#923116'" onMouseOut="this.style.color='blue'" href="{{URL::route('regolamento')}}" target="_blank">Regolamento</a>
+                            </div>
                         </div>
                     </div>
                     <div class="flex items-center justify-end mt-4">

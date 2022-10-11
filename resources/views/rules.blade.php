@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/x-icon" href="{{URL::asset('/images/favicon.ico')}}">
 	<title>
-		Privacy Policy
+		Regolamento
 	</title>
 
   <!-- Font Awesome if you need it
@@ -32,43 +32,35 @@
 			<!-- Image for mobile view-->
 			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('{{URL::asset('/images/logo.png')}}')"></div>
 			
-			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Privacy Policy-Gnameet</h1>
+			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Regolamento-Gnameet</h1>
 			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 			<div style="overflow:auto;height:370px;">
-				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg> The Personal Data</p>
-				<p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"/></svg> We collect and process your data ONLY on your request, on the legal basis of your consent in the following fields:</p>
-				<p class="pt-8 text-sm">
-					1. The contact form is a basic way of communication with our specialists. You can find it many different places at the site, but its construction is always the same. The contact form allows you to a sent inquiry about our product and services, costs estimates or product demos.
+				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg> 
+					<p>Richiedi gratuitamente la tua tessera fedeltà e ottieni un CashBack dal 15% al 30%</p>
+					<p class="pt-8 text-sm">Questo significa che una percentuale dei soldi che hai speso vengono accreditati e accumulati sulla tua tessera come credito interno e potrai utilizzarli la volta successiva secondo il regolamento.</p>
 				</p>
+				<p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"/></svg> 
+					Regolamento</p>
 				<p class="pt-8 text-sm">
-					2. For the purpose of answering your inquiry, we collect following data: name, e-mail address, phone number (optionally) and individual message (if you provide one). For a better understanding of the inquiry, we additionally ask to choose from the list following information: Subject and Price Range. This data is used to answer your inquiry, provide you our products and services, but also to marketing purposes e.g. inform you about our services and products.
-						The data is collected and processed only upon your consent. Your personal data will be stored in our potential clients database for indefinite period of time.
-						In the contact form, you can sign up for marketing materials like newsletter and publications.
+					Tutti i possessori della tessera hanno diritto al 10% di CashBack.<br>
+					Alcuni giorni verranno applicate delle promozioni in cui solo i possessori della tessera avranno diritto ad un CashBack massimo del 30% o apposite promozioni dedicate.<br>
+					Il credito interno non può essere convertito in denaro contante Alcune promozioni potrebbero non essere cumulabili con la Tessera<br>
+					Le percentuali di CashBack verranno calcolate come da esempi seguenti:<br>
+					✓ Uno scontrino da 20,00€ avrà un CashBack del 10% calcolato su 20.00€ = 2,00€<br> ✓ Uno scontrino da 35,00€ avrà un CashBack del 10% calcolato su 35.00€ = 3,50€<br> ✓ Uno scontrino da 71,00€ avrà un CashBack del 10% calcolato su 71.00€ = 7,10€
 				</p>
+				
+				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg> 
+					Modalità di utilizzo</p>
 				<p class="pt-8 text-sm">
-					3. Your data will be processed until you inform us about your withdraw. You can withdraw your consent at any time by sending us a message to dataprivacy@openloyalty.io. After that, all your data will be erased from our database.
+				Lo sconto sarà applicato con importo minimo di 10€ di CashBack<br>
+				Esempio:<br>
+				Scontrino 50€ - sconto cashback 10€ = paga 40€<br> Scontrino 50€ - sconto cashback 20€ = paga 30€<br>
+				DURATA DEL PROGRAMMA FEDELTÀ<br>
+				dal 01 Gennaio al 31 Dicembre ( Durata variabile )<br>
+				✓ Gli sconti CashBack potranno essere accumulati fino al 31 Dicembre<br>
+				✓ Gli sconti CashBack devono essere utilizzati entro la data di scadenza, comunicata dalla società con il dovuto anticipo mezzo e-mail e social
 				</p>
-				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg> Publications & Newsletter</p>
-				<p class="pt-8 text-sm">
-					1. We share our knowledge and experience in marketing materials like: publications (reports, ebooks, guides and checklists), blog posts and news. You can find them in Knowledge section, dedicated sites and our blog. You can download them, free of charge, at the time that suits you best.
-					By downloading the publication you are granted a permission to temporarily download one copy of the materials for personal, non-commercial transitory viewing only.
-					This is the grant of a license, not a transfer of title, and under this license you may not: modify or copy the materials; use the materials for any commercial purpose, or for any public display (commercial or non-commercial); attempt to decompile or reverse engineer any software contained on openloyalty.io’s web site; remove any copyright or other proprietary notations from the materials; or transfer the materials to another person or “mirror” the materials on any other server. This license shall automatically terminate if you violate any of these restrictions and may be terminated by openloyalty.io at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.
-					Our newsletter is a special selection of our freshest blog posts, publications, case studies, events, products and services, as well as the loyalty trends and news dedicated to loyalty technology and loyalty program development.
-					The newsletter is designed to share knowledge with loyalty specialists (business owners, managers, marketers, CTOs, and engineers).
-					Signing up for the newsletter is voluntary and can be done at openloyalty.io and at Open Loyalty Insider blog. The newsletter is sent to your email periodically (usually once a month) and on special occasions (like publication premiere).
-				</p>
-				<p class="pt-8 text-sm">
-					2. For the purpose of sharing our marketing materials, we collect following data: name, e-mail address. This data helps us to understand better our audience.
-					The data is collected and processed only upon your consent. Your personal data will be stored in our database for the indefinite period of time.
-				</p>
-				<p class="pt-8 text-sm">
-					3. Your data will be processed until you inform us about your withdraw. You can withdraw your consent at any time by sending us a message to dataprivacy@openloyalty.io or by an unsubscribing link in the email. After that, all your data will be erased from our database.
-				</p>
-				<div class="pt-12 pb-8">
-					<button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
-					Get In Touch
-					</button> 
-				</div>
+				
 
 				<div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
 					<a class="link" href="#" data-tippy-content="@facebook_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg></a>

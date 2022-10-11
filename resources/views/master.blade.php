@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/x-icon" href="{{URL::asset('/images/favicon.ico')}}">
     <title>
-      Gnameat - @yield('title')
+      Gnameet - @yield('title')
     </title>
     
     <link href="{{URL::asset('/css/app.css')}}" rel="stylesheet">
@@ -24,10 +24,10 @@
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 flex items-center">
-          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" style="display:flex;" href="#">
+          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" style="display:flex;" href="{{route('/')}}">
             <!--Icon from: http://www.potlabicons.com/ -->
             <img src="{{URL::asset('/images/logo.png')}}" style="border-radius:50%;align-self: center;" width="30px" hight="30px" alt="logo">
-            <span style="color:#d18d25">Gna</span><span style="color:#923116">meat</span>
+            <span style="color:#d18d25">Gna</span><span style="color:#923116">meet</span>
           </a>
         </div>
         <div class="block lg:hidden pr-4">
@@ -52,10 +52,10 @@
             <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#" style="display:flex;">
               <!--Icon from: http://www.potlabicons.com/ -->
               <img src="{{URL::asset('/images/logo.png')}}" style="border-radius:50%;align-self: center;" width="30px" hight="30px" alt="logo">
-              <span style="color:#d18d25">Gna</span><span style="color:#923116">meat</span>
+              <span style="color:#d18d25">Gna</span><span style="color:#923116">meet</span>
             </a>
           </div>
-          <a href="javascript:void()" class="footer-copyright flex-auto justify-center text-gray-500">Copyright © 2022 Gnameat Tutti i diritti riservati.</a>
+          <a href="javascript:void()" class="footer-copyright flex-auto justify-center text-gray-500">Copyright © 2022 Gnameet Tutti i diritti riservati.</a>
           <div class="footer-links flex-1 flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
             <ul class="list-reset flex justify-center flex-1 md:flex-none items-center">
               <li>

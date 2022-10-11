@@ -50,6 +50,6 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function points()
     {
-        return $this->hasMany(Point::class);
+        return $this->hasMany(Point::class)->orderBy('date','desc');
     }
 }

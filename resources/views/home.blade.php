@@ -59,7 +59,7 @@
           Benvenuti nell'applicazione di fidelizzazione del cliente!
           </h1>
           <p class="leading-normal text-2xl mb-8">
-          mangia in Gnameat, guadagna punti e ricevi ricompense!
+          mangia in Gnameet, guadagna punti e ricevi ricompense!
           </p>
           
         </div>
@@ -103,8 +103,9 @@
             come ottenere punti?
             </h3>
             <p class="text-gray-600 mb-8" style="color:#d18d25;">
-            otterrai 10 punti per ogni 1 euro di acquisto su Gnameat
-
+            otterrai 1 punti per ogni 1 euro di acquisto su Gnameet<br>
+            accumula almeno 100 punti per ottenere uno sconto del 10% sul tuo prossimo acquisto<br>
+            <a class="underline text-sm" style="color:blue;" onMouseOver="this.style.color='#923116'" onMouseOut="this.style.color='blue'" href="{{URL::route('regolamento')}}" target="_blank">leggi di più</a>
             </p>
           </div>
           <div class="w-full sm:w-1/2 p-6">
@@ -118,13 +119,18 @@
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
               <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3" style="color:#923116">
-              come ottenere ricompense?
+              Modalità di utilizzo?
               </h3>
               <p class="text-gray-600 mb-8" style="color:#d18d25;">
                 <ul>
                   <li>Puoi usare i tuoi punti quando hai almeno 100 punti</li>
                   <li>Ogni 10 punti = €1 (10%)</li>
+                  <li>Scontrino €50 - sconto cashback €10(100 punti) = paga €40</li> 
+                  <li>Scontrino €50 - sconto cashback €20(200 punti) = paga €30</li>
                   <li>Il bonus può essere speso e raccolto in qualsiasi ristorante</li>
+                  <li>
+                    <a class="underline text-sm" style="color:blue;" onMouseOver="this.style.color='#923116'" onMouseOut="this.style.color='blue'" href="{{URL::route('regolamento')}}" target="_blank">leggi di più</a>
+                  </li>
                 </ul>
                 
               </p>

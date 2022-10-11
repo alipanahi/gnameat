@@ -41,3 +41,13 @@ require __DIR__.'/auth.php';
 Route::get('/privacy_policy', function () {
     return view('privacy');
 })->name('privacy');
+Route::get('/rules', function () {
+    return view('rules');
+})->name('regolamento');
+Route::get('/my-points', function () {
+    $data = User::find(Auth::id())->points;
+    return view('my_points',['data'=>$data]);
+})->name('my-points');
+Route::get('/my-used-points', function () {
+    return view('my_used_points');
+})->name('my-used-points');

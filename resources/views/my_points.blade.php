@@ -1,5 +1,5 @@
 @extends('master')
-  @section('title','Cruscotto clienti')
+  @section('title','i miei punit')
   @section('style')
     <style>
       * {
@@ -119,47 +119,10 @@
         </div>
   @endsection
   @section('content')
-  @php
-      $last = $data->first();
-      $total = 0;
-      foreach($data as $record){
-        $total+=$record->point;
-      }
-  @endphp
-    <!--Hero-->
-    <div class="pt-24" >
-      <div class="container px-3" style="display:flex;justify-content:center;margin:0 auto;">
-        <!--Left Col-->
-        <div id="loyaltyCard">
-          <div class="cardContent">  
-            <div class="title" style="grid-erea:title;justify-self:start;">
-              <p class="uppercase tracking-loose w-full" style="margin-bottom:-10px;">Carta Fedeltà</p>
-              <strong style="margin-left:10px;color:#923116;">Gnameet</strong>
-            </div>
-            
-            <strong class="name" style="grid-erea:name;grid-column: span 2;justify-self:end;color:#923116;">{{strtoupper(Auth::user()['name']).' '.strtoupper(Auth::user()['lastname'])}}</strong>
-          
-            <strong class="point-title">
-              i tuoi punti: 
-            </strong>
-            <strong class="point" style="color:#923116;grid-erea:point;justify-self:start;">{{$total}}</strong>
-            <img src="{{URL::asset('/images/logo.jpg')}}" class="logo" style="grid-erea:logo;justify-self:end;border-radius:50%;width:35%;">
-            @php
-              $generatorPNG = new Picqer\Barcode\BarcodeGeneratorPNG();
-              $code = Auth::user()['name'].'-'.Auth::id();
-            @endphp
-            
-          <img class="barcode" style="grid-erea:barcode;grid-column: span 3;margin:0 auto;min-height:60px;" width="70%" src="data:image/png;base64,{{ base64_encode($generatorPNG->getBarcode($code, $generatorPNG::TYPE_CODE_128)) }}">
-          </div>
-          
-        </div>
-        
-      </div>
-    </div>
-    <br>
-    <br>
+ 
+  <div class="pt-24" > 
     <div style="text-align:center;">
-      <h1 class="point">L'ultimi punti ricevuti</h1>
+      <h1 class="point">i punti ricevuti</h1>
       <br>
       <table class="text-sm text-left" style="margin:0 auto;font-size:1.2em;text-align:center;">
         <thead class="text-xs uppercase" style="color:#923116">
@@ -170,19 +133,26 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
-            @if($last)
-              <td class="py-4 px-6">{{$last->date}}</td>
-              <td class="py-4 px-6">€ {{$last->amount}}</td>
-              <td class="py-4 px-6">{{$last->point}}</td>
-            @else
+          
+          @if($data)
+            @foreach($data as $item)
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td class="py-4 px-6">{{$item->date}}</td>
+                <td class="py-4 px-6">€ {{$item->amount}}</td>
+                <td class="py-4 px-6">{{$item->point}}</td>
+              </tr>
+            @endforeach
+          @else
+            <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
               <td class="py-4 px-6" colspan="3">non c'è nessun record</td>
-            @endif
-          </tr>
+            </tr>
+          @endif
+          
           
         </tbody>
       </table>
     </div>
+  </div>
     <br>
     <br>
     <!-- the curv -->
