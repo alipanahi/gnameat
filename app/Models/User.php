@@ -52,4 +52,8 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasMany(Point::class)->orderBy('date','desc');
     }
+    public function used_points()
+    {
+        return $this->hasMany(used_point::class)->orderBy('date','desc');
+    }
 }

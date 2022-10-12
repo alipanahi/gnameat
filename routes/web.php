@@ -45,9 +45,10 @@ Route::get('/rules', function () {
     return view('rules');
 })->name('regolamento');
 Route::get('/my-points', function () {
-    $data = User::find(Auth::id())->points;
+    $data = User::find(Auth::id())->points()->simplePaginate(10);
     return view('my_points',['data'=>$data]);
 })->name('my-points');
 Route::get('/my-used-points', function () {
-    return view('my_used_points');
+    $data = User::find(Auth::id())->used_points()->simplePaginate(10);
+    return view('my_used_points',['data'=>$data]);
 })->name('my-used-points');

@@ -14,7 +14,7 @@
         <x-auth-card class="flex items-center justify-center">
             <x-slot name="logo">
                 <a href="/">
-                    <img src="{{URL::asset('/images/register-logo.png')}}" alt="logo" width="50%" style="margin:0 auto;">
+                    <img src="{{URL::asset('/images/register-logo.jpg')}}" alt="logo" width="30%" style="margin:0 auto;">
                 </a>
             </x-slot>
 

@@ -123,14 +123,13 @@
  
   <div class="pt-24" > 
     <div style="text-align:center;">
-      <h1 class="point">i punti ricevuti</h1>
+      <h1 class="point">i punti usati</h1>
       <br>
       <table class="text-sm text-left" style="margin:0 auto;font-size:1.2em;text-align:center;">
         <thead class="text-xs uppercase" style="color:#923116">
           <tr>
             <th scope="col" class="py-3 px-6">Data</th>
-            <th scope="col" class="py-3 px-6">Importo</th>
-            <th scope="col" class="py-3 px-6">Punti ricevuti</th>
+            <th scope="col" class="py-3 px-6">Punti usati</th>
           </tr>
         </thead>
         <tbody>
@@ -139,7 +138,6 @@
             @foreach($data as $item)
               <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
                 <td class="py-4 px-6">{{$item->date}}</td>
-                <td class="py-4 px-6">€ {{$item->amount}}</td>
                 <td class="py-4 px-6">{{$item->point}}</td>
               </tr>
             @endforeach
